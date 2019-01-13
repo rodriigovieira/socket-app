@@ -1,6 +1,6 @@
 var socket = io();
 
-function scrollToBottom () {
+function scrollToBottom() {
   var messages = $('#messages');
   var newMessage = messages.children('li:last-child');
 
@@ -32,14 +32,24 @@ socket.on('disconnect', function () {
   console.log('Disconnected from client.');
 });
 
+// socket.on('updateUserList', function (users) {
+//   var ol = $('<ol></ol>');
+
+//   users.forEach(function (user) {
+//     ol.append($('<li></li>')).text(user);
+//   })
+
+//   $('#users').html(ol);
+// });
+
 socket.on('updateUserList', function (users) {
-  var ol = $('<ol></ol>');
+  var ol = jQuery('<ol></ol>');
 
-  users.forEach(function(user) {
-    ol.append($('<li></li>')).text(user);
-  })
+  users.forEach(function (user) {
+    ol.append(jQuery('<li></li>').text(user));
+  });
 
-  $('#users').html(ol);
+  jQuery('#users').html(ol);
 });
 
 socket.on('newMessage', function (data) {
