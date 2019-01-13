@@ -16,7 +16,7 @@ describe('isRealString', () => {
   });
 
   it('should return true for valid strings', () => {
-    const result = isRealString('Hoooowyaah!');
+    const result = isRealString('     Hoooowyaah!   ');
 
     expect(result).toBe(true);
   });
