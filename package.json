@@ -6,9 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server/server.js",
-    "start:watch": "nodemon server/server.js",
-    "test": "mocha server/**/*.test.js",
-    "test:watch": "nodemon --exec 'yarn test'"
+    "test": "mocha server/**/*.test.js"
   },
   "engines": {
     "node": "10.15.0"

@@ -89,5 +89,5 @@ io.on('connection', (socket) => {
 });
 
 server.listen(port, () => {
-  console.log('The server is up and running.');
+  console.log(`The server is up and running at port ${port}.`);
 });
