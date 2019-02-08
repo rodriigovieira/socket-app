@@ -2,7 +2,7 @@
 
 This is a live chat application created with socket.io, using Javascript in the client side and also in the server side (with NodeJS). The application was made as suggested by Andrew Mead in his NodeJS developer course.
 
-This application can be found live at: https://fierce-gorge-15150.herokuapp.com/. If you'd rather install it locally, just follow the procedures bellow.
+This application can be found live at: http://chat.rodrigovieira.work. If you'd rather install it locally, just follow the procedures bellow.
 
 # Installation
 
